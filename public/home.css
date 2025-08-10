@@ -1,0 +1,103 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(/img2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn_one i {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.btn_one i:hover {
+    cursor: pointer;
+}
+
+.btn_two {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 370px;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.3s ease-in-out;
+    cursor: grab;
+}
+
+.sidebar {
+    position: fixed;
+    width: 425px;
+    height: 100vh;
+    border: 2px solid rgb(23, 23, 23);
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(0, 0, 0, 0.799);
+    position: relative;
+    left: -430px;
+    transition: all 0.3s linear;
+}
+
+div>a {
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    top: 25%;
+    left: 30%;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 3em;
+    transition: text-shadow 0.3s ease, font-size 0.3s ease;
+}
+
+div>a:hover {
+    text-shadow: 2px 2px 4px rgb(255, 3, 3);
+    cursor: pointer;
+    font-size: 50px
+}
+
+.subheading {
+    display: inline-block;
+    margin-left: 180px;
+}
+
+#menu-toggle:checked~.sidebar {
+    left: 0;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked~.btn_one i {
+    opacity: 0;
+    ;
+}
+
+.personal-img {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    left: 115px;
+    top: 20px;
+    border: 2px solid rgb(23, 23, 23);
+    background-color: brown;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+#check:checked~.sidebar .btn_two i {
+    opacity: 1;
+}
