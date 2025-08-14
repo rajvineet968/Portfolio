@@ -46,6 +46,13 @@ body {
   text-shadow: 0 0 10px var(--accent-color);
 }
 
+.fa-brands{
+  color: aliceblue !important;
+}
+.fa-brands:hover{
+  opacity:0.75 !important;
+}
+
 .project ul {
   list-style: none;
   padding-left: 0;
