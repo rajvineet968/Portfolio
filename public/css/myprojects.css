@@ -1,0 +1,228 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Orbitron:wght@400;700&display=swap');
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+  --bg-color: linear-gradient(135deg, #0F172A 0%, #121827 100%);
+  --text-color: #e0e0e0;
+  --accent-color: #22d3ee;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  overflow:hidden;
+}
+
+/* =========================
+   SIDEBAR NAVIGATION
+========================= */
+.btn_one i {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn_two {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 370px;
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: transform 0.3s ease-in-out;
+  cursor: grab;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -430px;
+  width: 425px;
+  height: 100vh;
+  border: 2px solid rgb(23, 23, 23);
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s linear;
+}
+
+/* Personal image */
+.personal-img {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  left: 115px;
+  top: 20px;
+  border: 2px solid rgb(23, 23, 23);
+  background-color: brown;
+  border-radius: 50%;
+  margin: 25px 0 50px 0;
+}
+
+/* Sidebar links */
+div > a {
+  text-decoration: none;
+  color: azure;
+  position: relative;
+  top: 25%;
+  left: 30%;
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 3em;
+  transition: text-shadow 0.3s ease, font-size 0.3s ease;
+}
+
+div > a:hover {
+  text-shadow: 2px 2px 4px rgb(255, 3, 3);
+  font-size: 45px;
+}
+
+.subheading {
+  display: inline-block;
+  margin-left: 180px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+#menu-toggle:checked ~ .btn_one i {
+  opacity: 0;
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+.projects-section {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  padding: 50px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  max-width: 800px;
+  margin: 50px auto;
+  animation: fadeInUp 0.6s ease-out forwards;
+  text-align: center; /* like contact-section */
+}
+
+.projects-section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  color: var(--accent-color);
+  text-shadow: 0 0 10px var(--accent-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project h3 {
+  font-size: x-large;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px var(--accent-color);
+}
+
+.project ul {
+  list-style: none;
+  padding-left: 0;
+  color: #ccc;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.project ul li {
+  font-size: x-large;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.project ul li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.project-title {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 600;
+  transition: font-size 0.35s ease, text-shadow 0.35s ease, opacity 0.35s ease;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+  text-shadow: 2px 2px 4px rgb(255, 3, 3);
+  font-size: 45px;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Flex container for project icons or links */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 40px 20px;
+    margin: 30px 15px;
+  }
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+  .project h3 {
+    font-size: 1.5rem;
+  }
+  .project ul li {
+    font-size: 1rem;
+  }
+}
