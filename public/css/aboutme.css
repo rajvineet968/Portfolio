@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Orbitron:wght@400;700&display=swap');
 
 /* =========================
-   ROOT VARIABLES
+  ROOT VARIABLES
 ========================= */
 :root {
   --bg-color: linear-gradient(135deg, #0F172A 0%, #121827 100%);
@@ -11,17 +11,17 @@
 }
 
 /* =========================
-   BODY
+  BODY
 ========================= */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #121212;
-  overflow: hidden;
+  overflow: scroll;
 }
 /* =========================
-   SIDEBAR NAVIGATION
+  SIDEBAR NAVIGATION
 ========================= */
 .btn_one i {
   color: white;
