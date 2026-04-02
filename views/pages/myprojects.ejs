@@ -1,16 +1,39 @@
 <%-layout("layouts/boilerplate.ejs")%>
-    <section class="projects-section">
-        <div class="projects-container">
-            <h2 class="section-title">Projects</h2>
-            <hr>
-            <div class="project">
-                <div class="flex"><h3><a href="https://wanderlust-iir5.onrender.com/" class="project-title">Wanderlust</a></h3><a href="https://github.com/rajvineet968/Wanderlust"><i class="fa-brands fa-github"></i></a></div>
-                <ul class="project-points">
-                    <li><b>Wanderlust</b> is a web application built using Node.js, Express, and MongoDB following the MVC (Model-View-Controller) architecture.</li>
-                    <li>The app allows users to explore, create, and manage travel listings with image uploads, user authentication, and session management.</li>
-                    <li><strong>Tech Used:</strong> Node.js, Express.js, MongoDB, Passport.js, Multer, Cloudinary, EJS</li>
-                </ul>
-            </div>
+<section class="projects-section">
+    <div class="projects-container">
+        <h2 class="section-title">Projects</h2>
+        <hr>
 
+        <!-- Project 1 -->
+        <div class="project">
+            <div class="flex">
+                <h3>
+                    <a href="https://wanderlust-iir5.onrender.com/" class="project-title">Wanderlust</a>
+                </h3>
+                <a href="https://github.com/rajvineet968/Wanderlust">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <ul class="project-points">
+                <li><b>Wanderlust</b> is a web application built using Node.js, Express, and MongoDB following the MVC architecture.</li>
+                <li>Allows users to explore, create, and manage travel listings with image uploads, authentication, and sessions.</li>
+                <li><strong>Tech Used:</strong> Node.js, Express.js, MongoDB, Passport.js, Multer, Cloudinary, EJS</li>
+            </ul>
         </div>
-    </section>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <div class="flex">
+                <h3 class="project-title">Intelligent Inventory Management System</h3>
+            </div>
+            <ul class="project-points">
+                <li>Developed an intelligent inventory system integrating Web Development, Databases, and Machine Learning.</li>
+                <li>Supports product management, inventory tracking, and sales-based demand analysis.</li>
+                <li>Implemented ML-based demand forecasting using historical/synthetic data.</li>
+                <li>Models are trained and stored locally as <code>.pkl</code> files (not pushed to GitHub).</li>
+                <li><strong>Tech Used:</strong> Python, Machine Learning, Database Systems, Web Development</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
